@@ -2,19 +2,19 @@ function calcularNivel(vitorias, derrotas) {
     const saldoVitorias = vitorias - derrotas;
     let nivel;
 
-    if (vitorias < 10) {
+    if (saldoVitorias < 10) {
         nivel = "Ferro";
-    } else if (vitorias >= 11 && vitorias <= 20) {
+    } else if (saldoVitorias >= 11 && saldoVitorias <= 20) {
         nivel = "Bronze";
-    } else if (vitorias >= 21 && vitorias <= 50) {
+    } else if (saldoVitorias >= 21 && saldoVitorias <= 50) {
         nivel = "Prata";
-    } else if (vitorias >= 51 && vitorias <= 80) {
+    } else if (saldoVitorias >= 51 && saldoVitorias <= 80) {
         nivel = "Ouro";
-    } else if (vitorias >= 81 && vitorias <= 90) {
+    } else if (saldoVitorias >= 81 && saldoVitorias <= 90) {
         nivel = "Diamante";
-    } else if (vitorias >= 91 && vitorias <= 100) {
+    } else if (saldoVitorias >= 91 && saldoVitorias <= 100) {
         nivel = "Lendário";
-    } else if (vitorias >= 101) {
+    } else if (saldoVitorias >= 101) {
         nivel = "Imortal";
     }
 
